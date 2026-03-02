@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comunidades",
+  "info": {
+    "singularName": "comunidade",
+    "pluralName": "comunidades",
+    "displayName": "Comunidades"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "padroeiro": {
+      "type": "string"
+    },
+    "fieis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fiei.fiei",
+      "mappedBy": "comunidade"
+    },
+    "paroquia": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::paroquia.paroquia",
+      "inversedBy": "comunidades"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "comunidade"
+    },
+    "dizimos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dizimo.dizimo",
+      "mappedBy": "comunidade"
+    },
+    "ofertas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::oferta.oferta",
+      "mappedBy": "comunidade"
+    },
+    "coletas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coleta.coleta",
+      "mappedBy": "comunidade"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paroquias",
+  "info": {
+    "singularName": "paroquia",
+    "pluralName": "paroquias",
+    "displayName": "Paroquia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "comunidades": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comunidade.comunidade",
+      "mappedBy": "paroquia"
+    }
+  }
+}

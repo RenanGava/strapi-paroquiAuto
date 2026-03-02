@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dizimos",
+  "info": {
+    "singularName": "dizimo",
+    "pluralName": "dizimos",
+    "displayName": "Dizimo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "valor": {
+      "type": "biginteger",
+      "required": true
+    },
+    "comunidade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comunidade.comunidade",
+      "inversedBy": "dizimos"
+    },
+    "fiel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fiei.fiei",
+      "inversedBy": "dizimos"
+    },
+    "data_lancamento": {
+      "type": "date"
+    }
+  }
+}

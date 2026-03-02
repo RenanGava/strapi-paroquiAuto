@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coletas",
+  "info": {
+    "singularName": "coleta",
+    "pluralName": "coletas",
+    "displayName": "coleta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comunidade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comunidade.comunidade",
+      "inversedBy": "coletas"
+    },
+    "fiel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fiei.fiei",
+      "inversedBy": "coletas"
+    },
+    "valor": {
+      "type": "biginteger",
+      "required": true
+    },
+    "tipo_coleta": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

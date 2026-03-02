@@ -1,0 +1,55 @@
+
+
+services:
+  paroquiauto:
+    build: .
+    # image: strapi:latest
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_HOST: paroquiDB
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      APP_KEYS: ${APP_KEYS}
+      # - NODE_ENV: ${NODE_ENV}
+    volumes:
+      - ./config:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./yarn.lock:/opt/yarn.lock
+      - ./.env:/opt/app/.env
+      - ./public/uploads:/opt/app/public/uploads
+    ports:
+      - 1337:1337
+    networks:
+      - paroquiAuto
+    
+    depends_on:
+      - paroquiDB
+  
+  paroquiDB:
+    image: postgres
+    env_file:
+      - ./.env
+    environment:
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+    
+    ports:
+      - 5432:5432
+    
+    networks:
+      - paroquiAuto
+
+
+networks:
+  paroquiAuto:
+    name: paroquiAuto
+    driver: bridge
