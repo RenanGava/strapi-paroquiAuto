@@ -30,19 +30,9 @@
       "required": true,
       "unique": true
     },
-    "estado_civil": {
-      "type": "string",
-      "default": "Solteiro",
-      "required": true
-    },
     "data_nascimento": {
       "type": "date",
       "required": true
-    },
-    "isDizimista": {
-      "type": "boolean",
-      "required": true,
-      "default": false
     },
     "comunidade": {
       "type": "relation",

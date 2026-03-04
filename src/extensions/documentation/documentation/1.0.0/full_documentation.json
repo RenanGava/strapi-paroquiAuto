@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-03-01T21:52:26.199Z"
+    "x-generation-date": "2026-03-04T18:14:15.895Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -4699,15 +4699,9 @@
                       "pattern": "^\\d*$",
                       "example": "123456789"
                     },
-                    "estado_civil": {
-                      "type": "string"
-                    },
                     "data_nascimento": {
                       "type": "string",
                       "format": "date"
-                    },
-                    "isDizimista": {
-                      "type": "boolean"
                     },
                     "comunidade": {
                       "type": "object",
@@ -6463,15 +6457,9 @@
                   "pattern": "^\\d*$",
                   "example": "123456789"
                 },
-                "estado_civil": {
-                  "type": "string"
-                },
                 "data_nascimento": {
                   "type": "string",
                   "format": "date"
-                },
-                "isDizimista": {
-                  "type": "boolean"
                 },
                 "comunidade": {
                   "type": "object",
@@ -8293,15 +8281,9 @@
                       "pattern": "^\\d*$",
                       "example": "123456789"
                     },
-                    "estado_civil": {
-                      "type": "string"
-                    },
                     "data_nascimento": {
                       "type": "string",
                       "format": "date"
-                    },
-                    "isDizimista": {
-                      "type": "boolean"
                     },
                     "comunidade": {
                       "type": "object",
@@ -9853,9 +9835,7 @@
               "sexo",
               "nome",
               "dizimistaId",
-              "estado_civil",
-              "data_nascimento",
-              "isDizimista"
+              "data_nascimento"
             ],
             "type": "object",
             "properties": {
@@ -9873,15 +9853,9 @@
                 "pattern": "^\\d*$",
                 "example": "123456789"
               },
-              "estado_civil": {
-                "type": "string"
-              },
               "data_nascimento": {
                 "type": "string",
                 "format": "date"
-              },
-              "isDizimista": {
-                "type": "boolean"
               },
               "comunidade": {
                 "oneOf": [
@@ -9985,9 +9959,7 @@
           "sexo",
           "nome",
           "dizimistaId",
-          "estado_civil",
-          "data_nascimento",
-          "isDizimista"
+          "data_nascimento"
         ],
         "properties": {
           "id": {
@@ -10017,15 +9989,9 @@
             "pattern": "^\\d*$",
             "example": "123456789"
           },
-          "estado_civil": {
-            "type": "string"
-          },
           "data_nascimento": {
             "type": "string",
             "format": "date"
-          },
-          "isDizimista": {
-            "type": "boolean"
           },
           "comunidade": {
             "type": "object",
@@ -10081,15 +10047,9 @@
                       "pattern": "^\\d*$",
                       "example": "123456789"
                     },
-                    "estado_civil": {
-                      "type": "string"
-                    },
                     "data_nascimento": {
                       "type": "string",
                       "format": "date"
-                    },
-                    "isDizimista": {
-                      "type": "boolean"
                     },
                     "comunidade": {
                       "type": "object",
@@ -11812,15 +11772,9 @@
                       "pattern": "^\\d*$",
                       "example": "123456789"
                     },
-                    "estado_civil": {
-                      "type": "string"
-                    },
                     "data_nascimento": {
                       "type": "string",
                       "format": "date"
-                    },
-                    "isDizimista": {
-                      "type": "boolean"
                     },
                     "comunidade": {
                       "type": "object",
@@ -13504,15 +13458,9 @@
                         "pattern": "^\\d*$",
                         "example": "123456789"
                       },
-                      "estado_civil": {
-                        "type": "string"
-                      },
                       "data_nascimento": {
                         "type": "string",
                         "format": "date"
-                      },
-                      "isDizimista": {
-                        "type": "boolean"
                       },
                       "comunidade": {
                         "type": "object",
