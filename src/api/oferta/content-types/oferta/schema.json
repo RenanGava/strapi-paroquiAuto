@@ -11,12 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "comunidade": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::comunidade.comunidade",
-      "inversedBy": "ofertas"
-    },
     "valor": {
       "type": "biginteger",
       "required": true
@@ -24,6 +18,12 @@
     "data_lancamento": {
       "type": "date",
       "required": true
+    },
+    "comunidade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comunidade.comunidade",
+      "inversedBy": "ofertas"
     }
   }
 }

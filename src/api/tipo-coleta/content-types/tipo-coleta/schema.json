@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_coletas",
+  "info": {
+    "singularName": "tipo-coleta",
+    "pluralName": "tipo-coletas",
+    "displayName": "tipo coleta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "coletas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coleta.coleta",
+      "mappedBy": "tipo_coleta"
+    }
+  }
+}

@@ -40,12 +40,6 @@
       "target": "api::comunidade.comunidade",
       "inversedBy": "fieis"
     },
-    "coletas": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::coleta.coleta",
-      "mappedBy": "fiel"
-    },
     "dizimos": {
       "type": "relation",
       "relation": "oneToMany",

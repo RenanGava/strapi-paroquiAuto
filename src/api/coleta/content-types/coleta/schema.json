@@ -11,24 +11,24 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "valor": {
+      "type": "biginteger",
+      "required": true
+    },
     "comunidade": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::comunidade.comunidade",
       "inversedBy": "coletas"
     },
-    "fiel": {
+    "tipo_coleta": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::fiei.fiei",
+      "target": "api::tipo-coleta.tipo-coleta",
       "inversedBy": "coletas"
     },
-    "valor": {
-      "type": "biginteger",
-      "required": true
-    },
-    "tipo_coleta": {
-      "type": "string",
+    "data_lancamento": {
+      "type": "date",
       "required": true
     }
   }

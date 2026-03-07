@@ -15,6 +15,9 @@
       "type": "biginteger",
       "required": true
     },
+    "data_lancamento": {
+      "type": "date"
+    },
     "comunidade": {
       "type": "relation",
       "relation": "manyToOne",
@@ -26,9 +29,6 @@
       "relation": "manyToOne",
       "target": "api::fiei.fiei",
       "inversedBy": "dizimos"
-    },
-    "data_lancamento": {
-      "type": "date"
     }
   }
 }
