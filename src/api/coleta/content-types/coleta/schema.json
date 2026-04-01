@@ -12,14 +12,10 @@
   "pluginOptions": {},
   "attributes": {
     "valor": {
-      "type": "biginteger",
-      "required": true
+      "type": "biginteger"
     },
-    "comunidade": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::comunidade.comunidade",
-      "inversedBy": "coletas"
+    "data_lancamento": {
+      "type": "date"
     },
     "tipo_coleta": {
       "type": "relation",
@@ -27,9 +23,11 @@
       "target": "api::tipo-coleta.tipo-coleta",
       "inversedBy": "coletas"
     },
-    "data_lancamento": {
-      "type": "date",
-      "required": true
+    "comunidade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comunidade.comunidade",
+      "inversedBy": "coletas"
     }
   }
 }
