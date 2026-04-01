@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-03-20T17:55:25.709Z"
+    "x-generation-date": "2026-03-31T22:42:12.065Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5176,7 +5176,10 @@
               "nome": {
                 "type": "string"
               },
-              "padroeiro": {
+              "theosId": {
+                "type": "string"
+              },
+              "centroCustoId": {
                 "type": "string"
               },
               "fieis": {
@@ -6837,14 +6840,19 @@
         "properties": {
           "data": {
             "required": [
-              "nome"
+              "nome",
+              "theosId",
+              "centroCustoId"
             ],
             "type": "object",
             "properties": {
               "nome": {
                 "type": "string"
               },
-              "padroeiro": {
+              "theosId": {
+                "type": "string"
+              },
+              "centroCustoId": {
                 "type": "string"
               },
               "fieis": {
@@ -6987,7 +6995,9 @@
       "Comunidade": {
         "type": "object",
         "required": [
-          "nome"
+          "nome",
+          "theosId",
+          "centroCustoId"
         ],
         "properties": {
           "id": {
@@ -7006,7 +7016,10 @@
           "nome": {
             "type": "string"
           },
-          "padroeiro": {
+          "theosId": {
+            "type": "string"
+          },
+          "centroCustoId": {
             "type": "string"
           },
           "fieis": {
@@ -7064,7 +7077,10 @@
                     "nome": {
                       "type": "string"
                     },
-                    "padroeiro": {
+                    "theosId": {
+                      "type": "string"
+                    },
+                    "centroCustoId": {
                       "type": "string"
                     },
                     "fieis": {
@@ -8910,7 +8926,10 @@
               "nome": {
                 "type": "string"
               },
-              "padroeiro": {
+              "theosId": {
+                "type": "string"
+              },
+              "centroCustoId": {
                 "type": "string"
               },
               "fieis": {
@@ -10734,7 +10753,10 @@
               "nome": {
                 "type": "string"
               },
-              "padroeiro": {
+              "theosId": {
+                "type": "string"
+              },
+              "centroCustoId": {
                 "type": "string"
               },
               "fieis": {
@@ -12523,7 +12545,10 @@
               "nome": {
                 "type": "string"
               },
-              "padroeiro": {
+              "theosId": {
+                "type": "string"
+              },
+              "centroCustoId": {
                 "type": "string"
               },
               "fieis": {
@@ -14276,7 +14301,10 @@
                 "nome": {
                   "type": "string"
                 },
-                "padroeiro": {
+                "theosId": {
+                  "type": "string"
+                },
+                "centroCustoId": {
                   "type": "string"
                 },
                 "fieis": {
@@ -16057,7 +16085,10 @@
                     "nome": {
                       "type": "string"
                     },
-                    "padroeiro": {
+                    "theosId": {
+                      "type": "string"
+                    },
+                    "centroCustoId": {
                       "type": "string"
                     },
                     "fieis": {

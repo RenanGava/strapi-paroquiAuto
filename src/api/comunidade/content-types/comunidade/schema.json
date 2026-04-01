@@ -16,8 +16,15 @@
       "required": true,
       "unique": true
     },
-    "padroeiro": {
-      "type": "string"
+    "theosId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "centroCustoId": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "fieis": {
       "type": "relation",
