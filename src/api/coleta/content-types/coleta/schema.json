@@ -14,8 +14,11 @@
     "valor": {
       "type": "biginteger"
     },
-    "data_lancamento": {
-      "type": "date"
+    "comunidade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comunidade.comunidade",
+      "inversedBy": "coletas"
     },
     "tipo_coleta": {
       "type": "relation",
@@ -23,11 +26,9 @@
       "target": "api::tipo-coleta.tipo-coleta",
       "inversedBy": "coletas"
     },
-    "comunidade": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::comunidade.comunidade",
-      "inversedBy": "coletas"
+    "data_lancamento": {
+      "type": "date",
+      "required": true
     }
   }
 }
