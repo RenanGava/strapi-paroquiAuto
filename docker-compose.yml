@@ -32,6 +32,13 @@ services:
     
     depends_on:
       - paroquiDB
+    deploy: 
+      resources:
+        limits:
+          memory: 2g
+          cpus: 1
+        reservations:
+          memory: 1g
   
   paroquiDB:
     image: postgres
@@ -47,7 +54,13 @@ services:
     
     networks:
       - paroquiAuto
-
+    deploy: 
+      resources:
+        limits:
+          memory: 2g
+          cpus: 1
+        reservations:
+          memory: 1g
 
 networks:
   paroquiAuto:

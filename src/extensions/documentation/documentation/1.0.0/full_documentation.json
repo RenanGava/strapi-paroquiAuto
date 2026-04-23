@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-04-23T01:02:41.683Z"
+    "x-generation-date": "2026-04-23T14:30:59.560Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -10644,7 +10644,6 @@
         "properties": {
           "data": {
             "required": [
-              "cpf",
               "nome",
               "dizimistaId",
               "data_nascimento"
@@ -10753,7 +10752,6 @@
       "Fiei": {
         "type": "object",
         "required": [
-          "cpf",
           "nome",
           "dizimistaId",
           "data_nascimento"

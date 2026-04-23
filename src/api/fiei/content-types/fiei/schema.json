@@ -13,8 +13,9 @@
   "attributes": {
     "cpf": {
       "type": "string",
+      "default": "NT",
       "maxLength": 11,
-      "required": true,
+      "required": false,
       "unique": true
     },
     "sexo": {

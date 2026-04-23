@@ -7,8 +7,8 @@ import pLimit from "p-limit";
 
 export default factories.createCoreService("api::fiei.fiei", ({ strapi }) => ({
   async createMany(data = []) {
-    const CHUNK_SIZE = 2;
-    const limit = pLimit(1);
+    const CHUNK_SIZE = 100;
+    const limit = pLimit(10);
     const listResolved = [];
 
     try {
