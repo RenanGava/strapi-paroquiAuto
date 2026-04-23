@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-04-06T15:13:42.122Z"
+    "x-generation-date": "2026-04-23T01:02:41.683Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -6496,6 +6496,26 @@
                             }
                           }
                         },
+                        "theosContaId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosTipoDocId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosHistoricoId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosColetaId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -8267,6 +8287,26 @@
                                     }
                                   }
                                 }
+                              },
+                              "theosContaId": {
+                                "type": "string",
+                                "pattern": "^\\d*$",
+                                "example": "123456789"
+                              },
+                              "theosTipoDocId": {
+                                "type": "string",
+                                "pattern": "^\\d*$",
+                                "example": "123456789"
+                              },
+                              "theosHistoricoId": {
+                                "type": "string",
+                                "pattern": "^\\d*$",
+                                "example": "123456789"
+                              },
+                              "theosColetaId": {
+                                "type": "string",
+                                "pattern": "^\\d*$",
+                                "example": "123456789"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -10246,6 +10286,26 @@
                             }
                           }
                         },
+                        "theosContaId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosTipoDocId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosHistoricoId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosColetaId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -10585,7 +10645,6 @@
           "data": {
             "required": [
               "cpf",
-              "sexo",
               "nome",
               "dizimistaId",
               "data_nascimento"
@@ -10695,7 +10754,6 @@
         "type": "object",
         "required": [
           "cpf",
-          "sexo",
           "nome",
           "dizimistaId",
           "data_nascimento"
@@ -12072,6 +12130,26 @@
                               }
                             }
                           }
+                        },
+                        "theosContaId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosTipoDocId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosHistoricoId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosColetaId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
                         },
                         "createdAt": {
                           "type": "string",
@@ -13865,6 +13943,26 @@
                             }
                           }
                         },
+                        "theosContaId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosTipoDocId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosHistoricoId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
+                        "theosColetaId": {
+                          "type": "string",
+                          "pattern": "^\\d*$",
+                          "example": "123456789"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -15621,6 +15719,26 @@
                               }
                             }
                           },
+                          "theosContaId": {
+                            "type": "string",
+                            "pattern": "^\\d*$",
+                            "example": "123456789"
+                          },
+                          "theosTipoDocId": {
+                            "type": "string",
+                            "pattern": "^\\d*$",
+                            "example": "123456789"
+                          },
+                          "theosHistoricoId": {
+                            "type": "string",
+                            "pattern": "^\\d*$",
+                            "example": "123456789"
+                          },
+                          "theosColetaId": {
+                            "type": "string",
+                            "pattern": "^\\d*$",
+                            "example": "123456789"
+                          },
                           "createdAt": {
                             "type": "string",
                             "format": "date-time"
@@ -15942,7 +16060,11 @@
         "properties": {
           "data": {
             "required": [
-              "tipo"
+              "tipo",
+              "theosContaId",
+              "theosTipoDocId",
+              "theosHistoricoId",
+              "theosColetaId"
             ],
             "type": "object",
             "properties": {
@@ -15962,6 +16084,26 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "theosContaId": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
+              },
+              "theosTipoDocId": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
+              },
+              "theosHistoricoId": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
+              },
+              "theosColetaId": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
               },
               "locale": {
                 "type": "string"
@@ -16022,7 +16164,11 @@
       "TipoColeta": {
         "type": "object",
         "required": [
-          "tipo"
+          "tipo",
+          "theosContaId",
+          "theosTipoDocId",
+          "theosHistoricoId",
+          "theosColetaId"
         ],
         "properties": {
           "id": {
@@ -17459,6 +17605,26 @@
                         }
                       }
                     },
+                    "theosContaId": {
+                      "type": "string",
+                      "pattern": "^\\d*$",
+                      "example": "123456789"
+                    },
+                    "theosTipoDocId": {
+                      "type": "string",
+                      "pattern": "^\\d*$",
+                      "example": "123456789"
+                    },
+                    "theosHistoricoId": {
+                      "type": "string",
+                      "pattern": "^\\d*$",
+                      "example": "123456789"
+                    },
+                    "theosColetaId": {
+                      "type": "string",
+                      "pattern": "^\\d*$",
+                      "example": "123456789"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -17611,6 +17777,26 @@
                 }
               }
             }
+          },
+          "theosContaId": {
+            "type": "string",
+            "pattern": "^\\d*$",
+            "example": "123456789"
+          },
+          "theosTipoDocId": {
+            "type": "string",
+            "pattern": "^\\d*$",
+            "example": "123456789"
+          },
+          "theosHistoricoId": {
+            "type": "string",
+            "pattern": "^\\d*$",
+            "example": "123456789"
+          },
+          "theosColetaId": {
+            "type": "string",
+            "pattern": "^\\d*$",
+            "example": "123456789"
           },
           "createdAt": {
             "type": "string",

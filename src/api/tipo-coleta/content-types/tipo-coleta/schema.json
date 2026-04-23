@@ -21,6 +21,26 @@
       "relation": "oneToMany",
       "target": "api::coleta.coleta",
       "mappedBy": "tipo_coleta"
+    },
+    "theosContaId": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "theosTipoDocId": {
+      "type": "biginteger",
+      "required": true,
+      "unique": false
+    },
+    "theosHistoricoId": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "theosColetaId": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
     }
   }
 }

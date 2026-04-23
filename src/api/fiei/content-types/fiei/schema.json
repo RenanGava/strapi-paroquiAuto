@@ -14,11 +14,12 @@
     "cpf": {
       "type": "string",
       "maxLength": 11,
-      "required": true
+      "required": true,
+      "unique": true
     },
     "sexo": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "nome": {
       "type": "string",
