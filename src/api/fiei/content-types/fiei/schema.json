@@ -29,7 +29,7 @@
     },
     "dizimistaId": {
       "type": "biginteger",
-      "required": true,
+      "required": false,
       "unique": true
     },
     "data_nascimento": {

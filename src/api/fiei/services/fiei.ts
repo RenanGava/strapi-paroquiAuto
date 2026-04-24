@@ -19,6 +19,16 @@ export default factories.createCoreService("api::fiei.fiei", ({ strapi }) => ({
         await Promise.allSettled([
           limit(() =>
             chunk.map(async (fiel) => {
+
+                const alreadyExistFiel = await strapi.documents("api::fiei.fiei").findFirst({
+                  filters:{
+                    cpf: {
+                      $eq: fiel.cpf
+                    }
+                  }
+                })
+
+                console.log(alreadyExistFiel);
                 
                 await strapi.documents("api::fiei.fiei").create({
                   data: fiel,
