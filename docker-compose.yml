@@ -1,6 +1,24 @@
 
 
 services:
+
+
+
+  nginx:
+    image: nginx:latest
+    restart: unless-stopped
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+      - 443:443
+    tty: true
+    depends_on:
+      - paroquiauto
+    networks:
+      - paroquiAuto
+
+
   paroquiauto:
     build: .
     # image: strapi:latest
